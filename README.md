@@ -1,5 +1,5 @@
 addon (addon2) is a custom file format that i developed, first for mallet then expanded out into a multitude of my apps.
-```yaml
+```
 info {
   name myAddon
 }
