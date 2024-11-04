@@ -15,7 +15,7 @@ scripts {
 > Addons can also be disabled through `disabled.adncfg` (which you can just create if it does not automatically) which is a json array of names of disabled addons.
 
 also supplying automatic file setups for `.addon` and `.adncfg` (addon config) which loads into the `addon_config` variable:
-```json
+```json5
 {
   "myAddon":{...},
   "disabled":{...}
