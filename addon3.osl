@@ -1,5 +1,6 @@
 
 self.addons = {}
+self.config = {}
 def load(this.code, this.addonName) (
   this.adn = {}
   this.data = {}
@@ -71,7 +72,9 @@ def load_all() (
         save this.file "get"
         this.disabled = save_data.JsonParse()
       ) else (
-        error "unknown config file" + this.file.split(".")[1]
+        save this.file "get"
+        self.config[this.file.split(".")[1]] = save_data.JsonParse()
+        addon_config = self.config
       )
     )
   )
@@ -87,6 +90,7 @@ def load_all() (
 def run(this.key,this.name) (
   if self.addons[this.name] (
     if self.addons[this.name]["scripts"][this.key] (
+      addon_config = self.config
       run self.addons[this.name]["scripts"][this.key]
     )
   )
