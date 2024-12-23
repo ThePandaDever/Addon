@@ -1,6 +1,15 @@
 
 self.addons = {}
 self.config = {}
+
+def init() (
+  icon_addon = "c #881bbf w 6 square 0 -2 5 6 square -2 3 3 5 dot 0 -3 w 3 c #6d1499 line 2 9.5 6.5 5 cont 2 5 cont 2 9.5 w 1.5 c #fff line -3.25 -1 -5.75 -4 cont -3.25 -7 line 3.25 -1 5.75 -4 cont 3.25 -7 line -2.5 -4 2.5 -4 line 0 -6.5 0 -1.5"
+  icon_adncfg = "c #881bbf w 6 square 0 -2 5 6 square -2 3 3 5 dot 0 -3 w 3 c #6d1499 line 2 9.5 6.5 5 cont 2 5 cont 2 9.5 w 1.5 c #fff icn cog .55 0 -3.75"
+  
+  file "install_type" "addon" icon_addon "Addon File" ["studio"]
+  file "install_type" "adncfg" icon_adncfg "Addon Config" ["studio"]
+)
+
 def load(this.code, this.addonName) (
   this.adn = {}
   this.data = {}
