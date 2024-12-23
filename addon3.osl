@@ -1,4 +1,3 @@
-
 self.addons = {}
 self.config = {}
 
